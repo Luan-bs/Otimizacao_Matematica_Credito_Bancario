@@ -1,0 +1,23 @@
+[project]
+name = "otimizacao-credito-bancario"
+version = "0.1.0"
+description = "Aplicação de Programação Linear na Alocação Ótima de Recursos e Gestão de Risco em Instituições Financeiras"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26.0",
+    "scipy>=1.11.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/README.md",
+    "/src",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
